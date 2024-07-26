@@ -604,6 +604,9 @@ margin-right: 1em;}
     .icon1 i.bx,.icon2 i.bx,.icon3 i.bx,.icon4 i.bx,.icon5 i.bx,.icon6 i.bx{
         font-size: 65px;
     }
+    .icon3 i.bx{
+        font-size:58px;
+    }
     .icons h3{
         font-size: 6.5px;
     }
