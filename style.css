@@ -303,10 +303,13 @@ margin-left: 9em;
     background-position: center; 
     background-repeat: no-repeat;
     color: white;
+    
 }
 .pludunns{
     display: flex;
     margin-bottom: 1em;
+    /* margin: 5px; */
+    /* flex-direction: column; */
 }
 .pludunn1 h3{
     color: black;
@@ -672,9 +675,11 @@ margin-right: 1em;}
     .pludunn1 h3{
         font-size: 30px;
     }
+
     .pludunns{
-    flex direction:column;
+    flex-direction: column; 
      font-size: 10px; 
+     margin-left: 5px;
     }
     .pludunn1  h5,.pludunn2 h5{
         font-size: 11px;
@@ -686,7 +691,10 @@ margin-right: 1em;}
 .footer-map a{
     font-size: 10px;
     font-weight: 900;
+    display: flex;
     flex-direction:column;
+    margin-right: 15px;
+    border-right: none;
 }
 
 
