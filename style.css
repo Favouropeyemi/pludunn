@@ -12,6 +12,50 @@ section{
     margin: 0;
     padding: 0;
 }
+
+/* General Header Styling */
+header {
+    background-color: #fff;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+header .container img {
+    width: 50px;
+    height: 50px;
+}
+
+header .container h3, .container p {
+    margin-left: 15px;
+}
+
+.header-icon {
+    display: flex;
+    gap: 15px;
+}
+
+/* Menu Icon Styling */
+#menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* 
 header .container{
 border: 1px solid;
 height: 5em;
@@ -20,6 +64,14 @@ background-color:white;
 display: flex;
 justify-content: space-between;
 align-items: center;
+position: fixed;
+width: 100%;
+}
+#menu-icon{font-size: 33px;
+    z-index: 10001;
+    cursor: pointer;
+    margin-top: 12px;
+    display: none;
 }
 
 header .container h3{
@@ -30,12 +82,12 @@ header .container h3{
 
 }
 header .container img{
-    width: 10em;
+    width: 5%;
     /* padding-top: 5em; */
-    border-radius: 10em;
+    /* border-radius: 10em;
     border-top-left-radius: 10em;
     border-top-right-radius: 10em;
-    margin-top: 5em;
+    margin-top: 1em;
 }
 .commune, .decouvre, .accompagne, .anime{
     font-style: italic;
@@ -58,7 +110,7 @@ strong{
     background-color: rgb(11, 243, 11);
     font-size: 25px;
     margin: 15px;
-}
+}  */
 .nature{
     background-image:url(mainbackground.jpg);
     background-size: cover;
@@ -357,19 +409,39 @@ margin-left: 9em;
 .footer-map a:last-of-type{
     border-right: none;
 }
-@media screen and (max-width:991px) {
-    header .container h3{
-        font-size: 20px;
+
+
+
+@media (max-width:991px) {  
+
+/* 
+    #menu-icon{
+        display: block;
     }
-    strong{
-        font-size: 70%;
+    
+ header .container p {
+        display: none;
     }
-    .icon1 i.bx,.icon2 i.bx,.icon3 i.bx,.icon4 i.bx,.icon5 i.bx,.icon6 i.bx{
-        font-size: 80px;
-    }
-    .icons h3,h4{
-        font-size: 90%;
-    }
+
+    Toggle class to show content when menu icon is clicked */
+    /* header .container.active .header-icon,
+    header .container.active h3,
+    header .container.active p {
+        display: block;
+        flex-direction: column;
+        align-items: center;
+    } */
+
+   
+    
+    
+
+    
+
+  
+
+       
+          
     .Actualites1 .text,.Actualites2 .text,.Actualites3 .text{
         font-size: 10px
     }
@@ -377,7 +449,26 @@ margin-left: 9em;
     .Actualites1 img{
         height: 17.4em;
     }
-    .Actualites3 img{
+    .Actualites3 img{    #menu-icon{
+        display: initial;
+        /* background: none; */
+        height: 50px;
+        width: 50px;
+        /* background: #f7f0fb; */
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        /* color: var(--other-color); */
+        font-size: 32px;
+    }        
+
+    .header-icon1, .header-icon2, .header-icon3{
+        margin-top: 1rem;
+    }
+  
+    /* Hide icons and other elements by default in smaller screens */
+     header .container h3
         height: 17.4em;
     }
     .Agenda2{
