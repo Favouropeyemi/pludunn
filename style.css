@@ -938,10 +938,10 @@ header .container h3, .container p {
         font-size: 20px;
     }
 
-
+/* 
     .container .Agenda1{
         padding-right: 2em;
-    }
+    } */
 
     /* .Agenda2 .date{
         font-size: 16px;
@@ -966,13 +966,13 @@ header .container h3, .container p {
 
 
     .Agenda2{
-        margin-left: 1px;
+        /* margin-left: 1px; */
     }
-    .Agenda2, .Agenda3{
+    /* .Agenda2, .Agenda3{
       display: block;
       margin-left: auto;
       margin-right: auto;
-    }
+    } */
     .agenda-footer .container{
         display: grid;
         grid-template-columns: repeat(2,1fr);
